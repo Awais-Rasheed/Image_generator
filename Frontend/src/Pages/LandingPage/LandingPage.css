@@ -1,0 +1,107 @@
+.landing-page {
+  width: 100%;
+  /* position: absolute; */
+  background-image: url("../../../public/img/animation.gif");
+  background-size: cover;
+  height: 100vh;
+}
+
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #f950ff, #ff6347, #852603);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.contents {
+  /* position: relative;
+  z-index: 9999; */
+  width: 100%;
+}
+
+.landing-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.nav-items {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.nav-links {
+  width: 15%;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video_logo {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+
+.video_logo h1 {
+  margin-top: 25px;
+}
+
+.banner-text {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.start-btn {
+  margin-left: 43%;
+  margin-top: 3%;
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 20px;
+  background-color: yellow;
+  color: black;
+  border: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Landing_logo {
+    animation: App-logo-spin infinite 20s linear;
+    position: relative;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 35%;
+  }
+
+  .video-logo-heading{
+    display: none;
+  }
+
+  .nav-links {
+    width: 40%;
+    margin-right: 0%;
+  }
+
+  .start-btn {
+    margin-left: 31%;
+    margin-top: 3%;
+  }
+}
